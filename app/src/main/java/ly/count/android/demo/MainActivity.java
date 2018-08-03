@@ -16,8 +16,8 @@ public class MainActivity extends Activity {
     private String demoTag = "CountlyDemo";
 
     /** You should use try.count.ly instead of YOUR_SERVER for the line below if you are using Countly trial service */
-    final String COUNTLY_SERVER_URL = "YOUR_SERVER";
-    final String COUNTLY_APP_KEY = "YOUR_APP_KEY";
+    final String COUNTLY_SERVER_URL = "https://nct1.logging.nextsmarty.com";
+    final String COUNTLY_APP_KEY = "5922a0dbbeb60928f7bed91018b97e9d6760e764";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,10 @@ public class MainActivity extends Activity {
         //Log.i(demoTag, "Before calling init. This should return 'false', the value is:" + Countly.sharedInstance().isInitialized());
         Countly.sharedInstance().init(appC, COUNTLY_SERVER_URL, COUNTLY_APP_KEY);
         //Log.i(demoTag, "After calling init. This should return 'true', the value is:" + Countly.sharedInstance().isInitialized());
+    }
+
+    public void onClickButtonScrollingEvents(View v) {
+        startActivity(new Intent(this, ScrollingActivity.class));
     }
 
     public void onClickButtonCustomEvents(View v) {

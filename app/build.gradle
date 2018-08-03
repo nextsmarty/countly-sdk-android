@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 //repositories {
-    //mavenLocal()
-    //jcenter()
+//mavenLocal()
+//jcenter()
 //}
 
 buildscript {
     repositories {
         maven {
-            url  "http://dl.bintray.com/countly/maven"
+            url "http://dl.bintray.com/countly/maven"
         }
 //        flatDir {
 //            dirs 'libs'
@@ -51,4 +51,5 @@ dependencies {
     //implementation 'com.google.android.gms:play-services-gcm:10.0.1'
 
 //    implementation 'ly.count.android:sdk:18.01.2'
+    implementation 'com.android.support:support-v4:25.4.0'
 }

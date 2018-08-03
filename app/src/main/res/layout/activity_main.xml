@@ -23,6 +23,12 @@
             android:onClick="onClickButtonCustomEvents"/>
 
         <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickButtonScrollingEvents"
+            android:text="Scrolling Events" />
+
+        <Button
             android:text="@string/crash_reporting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
